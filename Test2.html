@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        .chessboard{
+            height: 800px;
+            width: 800px;
+            top: 8%;
+            left: 30%;
+            position: absolute;
+            border: 20px solid #5f3f3f ;
+
+
+            /*background-color: black;*/
+        }
+        .row{
+            height: 100px;
+            width: 800px;
+            position: absolute;
+            /*background-color: black;*/
+        }
+        .square-1{
+            height: 100px;
+            width: 100px;
+            float: left;
+
+            background-color: sandybrown;
+        }
+
+        .square-2{
+            height: 100px;
+            width: 100px;
+            float:left;
+            background-color: saddlebrown;
+        }
+
+        .Pieces{
+            height: 100%;
+            width: 100%;
+            margin: auto;
+        }
+        
+        body{
+            background-image: url("images/chess_game_board_chess_pieces_light_60018_1920x1080.jpg");
+
+        }
+
+        audio{
+            display: none;
+        }
+
+        footer{
+            left: 0;
+            right: 0;
+            position:fixed;
+            bottom:0;
+            left:0;
+            font-size: 22px;
+            font-style: inherit;
+            height: 20px;
+            background:rgba(0, 0, 0, 0.5);
+            -webkit-animation: mymove 2s infinite;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @-webkit-keyframes mymove {
+            from {color: #ffff00;}
+            to {color: #76ff03;}
+        }
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="chessboard">
+    <div id="Line-1" class="row"></div>
+    <div id="Line-1-col-1" class="square-1">
+        <img class="Pieces" id="Black_rook-1" src="images/Black_rook.png">
+    </div>
+
+    <div id="Line-1-col-2" class="square-2">
+        <img class="Pieces" id="Black_knight-1" src="images/Black_knight.png">
+    </div>
+    <div id="Line-1-col-3" class="square-1">
+        <img class="Pieces" id="Black_bishop-1" src="images/Black_bishop.png">
+    </div>
+    <div id="Line-1-col-4" class="square-2">
+        <img class="Pieces" id="Black_queen" src="images/Black_queen.png">
+    </div>
+    <div id="Line-1-col-5" class="square-1">
+        <img class="Pieces" id="Black_king" src="images/Black_king.png">
+    </div>
+    <div id="Line-1-col-6" class="square-2">
+        <img class="Pieces" id="Black_bishop-2" src="images/Black_bishop.png">
+    </div>
+    <div id="Line-1-col-7" class="square-1">
+        <img class="Pieces" id="Black_knight-2" src="images/Black_knight.png">
+    </div>
+    <div id="Line-1-col-8" class="square-2">
+        <img class="Pieces" id="Black_rook-2" src="images/Black_rook.png">
+    </div>
+
+    <div id="Line-2"></div>
+    <div id="Line-2-col-1" class="square-2">
+        <img class="Pieces" id="Black_Pawn-1"  src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-2" class="square-1">
+        <img class="Pieces" id="Black_Pawn-2" src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-3" class="square-2">
+        <img class="Pieces" id="Black_Pawn-3" src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-4" class="square-1">
+        <img class="Pieces" id="Black_Pawn-4" src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-5" class="square-2">
+        <img class="Pieces" id="Black_Pawn-5" src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-6" class="square-1">
+        <img class="Pieces" id="Black_Pawn-6" src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-7" class="square-2">
+        <img class="Pieces" id="Black_Pawn-7" src="images/Black_Pawn.png">
+    </div>
+    <div id="Line-2-col-8" class="square-1">
+        <img class="Pieces" id="Black_Pawn-8" src="images/Black_Pawn.png">
+    </div>
+
+    <div id="Line-3"></div>
+    <div id="Line-3-col-1" class="square-1"></div>
+    <div id="Line-3-col-2" class="square-2"></div>
+    <div id="Line-3-col-3" class="square-1"></div>
+    <div id="Line-3-col-4" class="square-2"></div>
+    <div id="Line-3-col-5" class="square-1"></div>
+    <div id="Line-3-col-6" class="square-2"></div>
+    <div id="Line-3-col-7" class="square-1"></div>
+    <div id="Line-3-col-8" class="square-2"></div>
+
+    <div id="Line-4"></div>
+    <div id="Line-4-col-1" class="square-2"></div>
+    <div id="Line-4-col-2" class="square-1"></div>
+    <div id="Line-4-col-3" class="square-2"></div>
+    <div id="Line-4-col-4" class="square-1"></div>
+    <div id="Line-4-col-5" class="square-2"></div>
+    <div id="Line-4-col-6" class="square-1"></div>
+    <div id="Line-4-col-7" class="square-2"></div>
+    <div id="Line-4-col-8" class="square-1"></div>
+
+    <div id="Line-5"></div>
+    <div id="Line-5-col-1" class="square-1"></div>
+    <div id="Line-5-col-2" class="square-2"></div>
+    <div id="Line-5-col-3" class="square-1"></div>
+    <div id="Line-5-col-4" class="square-2"></div>
+    <div id="Line-5-col-5" class="square-1"></div>
+    <div id="Line-5-col-6" class="square-2"></div>
+    <div id="Line-5-col-7" class="square-1"></div>
+    <div id="Line-5-col-8" class="square-2"></div>
+
+
+    <div id="Line-6"></div>
+    <div id="Line-6-col-1" class="square-2"></div>
+    <div id="Line-6-col-2" class="square-1"></div>
+    <div id="Line-6-col-3" class="square-2"></div>
+    <div id="Line-6-col-4" class="square-1"></div>
+    <div id="Line-6-col-5" class="square-2"></div>
+    <div id="Line-6-col-6" class="square-1"></div>
+    <div id="Line-6-col-7" class="square-2"></div>
+    <div id="Line-6-col-8" class="square-1"></div>
+
+    <div id="Line-7"></div>
+    <div id="Line-7-col-1" class="square-1">
+        <img class="Pieces" id="wPawn-1" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-2" class="square-2">
+        <img class="Pieces" id="wPawn-2" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-3" class="square-1">
+        <img class="Pieces" id="wPawn-3" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-4" class="square-2">
+        <img class="Pieces" id="wPawn-4" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-5" class="square-1">
+        <img class="Pieces" id="wPawn-5" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-6" class="square-2">
+        <img class="Pieces" id="wPawn-6" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-7" class="square-1">
+        <img class="Pieces" id="wPawn-7" src="images/White_Pawn.png">
+    </div>
+    <div id="Line-7-col-8" class="square-2">
+        <img class="Pieces" id="wPawn-8" src="images/White_Pawn.png">
+    </div>
+
+    <div id="Line-8"></div>
+    <div id="Line-8-col-1" class="square-2">
+        <img class="Pieces" id="White_rook-1" src="images/White_rook.png">
+    </div>
+    <div id="Line-8-col-2" class="square-1">
+        <img class="Pieces" id="White_knight-1" src="images/White_knight.png">
+    </div>
+    <div id="Line-8-col-3" class="square-2">
+        <img class="Pieces" id="White_bishop-1" src="images/White_bishop.png">
+    </div>
+    <div id="Line-8-col-4" class="square-1">
+        <img class="Pieces" id="White_queen" src="images/White_queen.png">
+    </div>
+    <div id="Line-8-col-5" class="square-2">
+        <img class="Pieces" id="White_king" src="images/White_king.png">
+    </div>
+    <div id="Line-8-col-6" class="square-1">
+        <img class="Pieces" id="White_bishop-2" src="images/White_bishop.png">
+    </div>
+    <div id="Line-8-col-7" class="square-2">
+        <img class="Pieces" id="White_knight-2" src="images/White_knight.png">
+    </div>
+    <div id="Line-8-col-8" class="square-1">
+        <img class="Pieces" id="White_rook-2" src="images/White_rook.png">
+    </div>
+
+</div>
+
+<footer>
+    Copyright 2017 IJSE. Created by VIDURA MARAMBE
+</footer>
+
+<audio autoplay="true" src="Audio/Game%20of%20Thrones%20Main%20Theme%20%5BDownload%20Link%5D.mp3"></audio>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="JS/Controller.js"></script>
+</body>
+</html>

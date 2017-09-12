@@ -1,0 +1,82 @@
+#main{
+    position: fixed;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    perspective: 2000px;
+    perspective-origin: 30%;
+}
+
+.chessboard{
+    height: 800px;
+    width: 800px;
+    top: 8%;
+    left: 30%;
+    position: absolute;
+    border: 20px solid #5f3f3f ;
+    transform: rotateX(50deg);
+
+    /*background-color: black;*/
+}
+.row{
+    height: 100px;
+    width: 800px;
+    position: absolute;
+    /*background-color: black;*/
+}
+.square-1{
+    height: 100px;
+    width: 100px;
+    float: left;
+
+    background-color: sandybrown;
+}
+
+.square-2{
+    height: 100px;
+    width: 100px;
+    float:left;
+    background-color: saddlebrown;
+}
+
+.Pieces{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+body{
+    background-image: url("../images/chess_game_board_chess_pieces_light_60018_1920x1080.jpg");
+
+}
+
+audio{
+    display: none;
+}
+
+footer{
+    left: 0;
+    right: 0;
+    position:fixed;
+    bottom:0;
+    left:0;
+    font-size: 22px;
+    font-style: inherit;
+    height: 20px;
+    background:rgba(0, 0, 0, 0.5);
+    -webkit-animation: mymove 2s infinite;
+    text-align: center;
+    padding: 25px;
+}
+
+@-webkit-keyframes mymove {
+    from {color: #ffff00;}
+    to {color: #76ff03;}
+}
+
+.piece-container :hover{
+    /*transform: rotateX(310deg);*/
+    background-color: rgba(0, 0, 0, 0.2);
+    /* height: 100px;
+     width: 100px;*/
+}

@@ -1,0 +1,63 @@
+#main{
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+    perspective: 2000px;
+    perspective-origin: 30%;
+}
+.chessboard{
+    height: 800px;
+    width: 800px;
+    top: 8%;
+    left: 30%;
+    position: absolute;
+    border: 20px solid #5f3f3f ;
+    transform: rotateX(50deg);
+    /* transform: rotateX(50deg);
+
+
+     /*background-color: black;*/
+}
+
+
+.row{
+    height: 100px;
+    width: 800px;
+    position: absolute;
+    display: inline;
+    /*background-color: black;*/
+}
+.square-1{
+    height: 100px;
+    width: 100px;
+    float: left;
+    display: inline;
+    background-color: sandybrown;
+}
+
+.square-2{
+    height: 100px;
+    width: 100px;
+    float:left;
+    background-color: saddlebrown;
+}
+
+.Pieces{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+#Black_Pawn-8{
+    transform: rotateX(150deg);
+    transform: rotateY(200deg);
+}
+
+
+
+.piece-container :hover{
+    /*transform: rotateX(310deg);*/
+    background-color: rgba(0, 0, 0, 0.2);
+    /* height: 100px;
+     width: 100px;*/
+}
